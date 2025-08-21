@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: #a1bc2c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .calculator{
+            padding: 1vw;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+        }
+        input{
+            width: 100%;
+            padding: 2vw 1vw;
+            margin-bottom: 1.5vw;
+            font-size: 1.5vw;
+            border: none;
+            outline: none;
+            text-align: right;
+            color: #000;
+            font-weight: 600;
+        }
+        input::placeholder{
+            color: #000;
+        }
+        button{
+            width: 5vw;
+            height: 5vw;
+            border-radius: 1vw;
+            margin: 0.5vw;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5vw;
+        }
+        button:hover{
+            background-color: #f67c14;
+            color: #fff;
+        }
+        .equal{
+            width: 11.5vw;
+            background-color: #f67c14;
+        }
+        .operator{
+            color: #f67c14;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" placeholder="0" id="inputBox" readonly>
+        <div>
+            <button class="operator">AC</button>
+            <button class="operator">DEL</button>
+            <button class="operator">%</button>
+            <button class="operator">/</button>
+        </div>
+        <div>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">*</button>
+        </div>
+        <div>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator">-</button>
+        </div>
+        <div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operator">+</button>
+        </div>
+        <div>
+            <button>0</button>
+            <button>.</button>
+            <button class="equal">=</button>
+        </div>
+    </div>
+
+    <script>
+        let display = document.getElementById("inputBox");
+        let button = document.getElementsByTagName("button")
+        let string = ""
+        let newArray = Array.from(button)
+        newArray.forEach(function(btn){
+            btn.addEventListener("click", function(e){
+                if (e.target.innerHTML == "AC") {
+                    string = "";
+                    display.value = string;
+                }else if(e.target.innerHTML == "DEL"){
+                    string = string.substring(0, string.length-1)
+                    display.value = string;
+                }
+                else if(e.target.innerHTML == "="){
+                    string = eval(string)
+                    display.value = string
+                }
+                else{
+                    string += e.target.innerHTML;
+                    display.value = string;
+                }         
+            })
+        })
+        
+    </script>
+</body>
+</html>

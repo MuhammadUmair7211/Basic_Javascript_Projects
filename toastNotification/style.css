@@ -1,0 +1,78 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: purple;
+}
+button {
+	padding: 1rem 2rem;
+	border: none;
+	color: purple;
+	cursor: pointer;
+	font-size: 1rem;
+	transition: background-color 0.3s ease;
+}
+button:hover {
+	background-color: rgb(80, 3, 80);
+	color: white;
+}
+.notification-container {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	max-width: 400px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.notification {
+	height: 50px;
+	background-color: #fff;
+	border-radius: 6px;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.notification-para {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.animation-background {
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	overflow: hidden;
+	background-color: red;
+	animation: color 3s linear;
+}
+
+.notification i {
+	font-size: 24px;
+	cursor: pointer;
+}
+@keyframes color {
+	0% {
+		width: 100%;
+	}
+	50% {
+		width: 50%;
+	}
+	100% {
+		width: 0%;
+	}
+}

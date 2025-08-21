@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Animated Weather App</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	</head>
+	<body>
+		<div class="shadow-md px-6 md:px-16 lg:px-32 py-4 md:py-4">
+			<a
+				href="/"
+				title="Home"
+				class="text-md text-blue-500 md:text-3xl hover:underline transition-all duration-300"
+				>SkyCast - Your Daily Weather Companion</a
+			>
+		</div>
+		<div
+			class="card max-w-4xl md:shadow-[0_0_5px_0] px-8 py-8 mx-auto md:mt-20"
+		>
+			<form
+				class="search-container flex flex-col md:flex-row rounded-lg bg-gray-100 items-center justify-between border border-gray-300 overflow-hidden"
+			>
+				<input
+					type="search"
+					class="input-field outline-none w-full px-4 py-2"
+					placeholder="search for a location"
+				/>
+				<button
+					type="submit"
+					class="search-button bg-blue-500 text-white px-4 py-2 hover:bg-blue-600 duration-300 cursor-pointer"
+				>
+					Search
+				</button>
+			</form>
+			<div class="text-center mt-10">
+				<h1 class="country-name"></h1>
+				<h2 class="city-name text-4xl my-2"></h2>
+				<p class="date"></p>
+				<div class="flex flex-col items-center gap-2">
+					<img class="weather-icon mt-2" src="" alt="Weather Icon" />
+					<p class="temperature"></p>
+					<p class="description"></p>
+					<p>Humidity: <span class="humidity"></span></p>
+					<p>Wind: <span class="wind"></span></p>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

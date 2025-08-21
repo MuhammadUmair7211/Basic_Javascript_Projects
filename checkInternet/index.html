@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Check internet Connectivity</title>
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			body {
+				min-height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.checking {
+				padding: 20px 50px;
+				font-size: 24px;
+				border-radius: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="internet">
+			<p class="checking">Checking connection...</p>
+		</div>
+
+		<script>
+			function checkStatus() {
+				if (navigator.onLine) {
+					const online = document.querySelector(".checking");
+					online.textContent = "Yes, You are Online";
+					online.style.backgroundColor = "green";
+					online.style.color = "white";
+				} else {
+					const offline = document.querySelector(".checking");
+					offline.textContent = "Sorry, You are Offline";
+					offline.style.backgroundColor = "red";
+					offline.style.color = "white";
+					console.log(navigator.onLine);
+				}
+			}
+			checkStatus();
+		</script>
+	</body>
+</html>

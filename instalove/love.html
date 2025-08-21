@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Love</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        html body{
+            width: 100%;
+            height: 100vh;
+        }
+        body{
+            background-color: lightseagreen;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .container{
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            cursor:pointer;
+        }
+        .container img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;    
+        }
+        .container i{
+            color: #fff;
+            font-size: 70px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate( -50%, -50%) scale(0);
+            opacity: 1;
+            user-select: none;
+            transition: all;
+            transition-property: ease;
+            transition-duration: 0.4s;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="girl.jpeg" alt="">
+        <i class="fa-solid fa-heart"></i>
+    </div>
+    <script>
+        let box = document.querySelector(".container")
+        let love = document.querySelector("i")
+        box.addEventListener("dblclick", function(){
+        love.style.transform = "translate(-50%, -50%) scale(1)";
+        setTimeout(function(){
+            love.style.transform = "translate(-50%, -50%) scale(0)";
+        }, 2000);
+        
+        
+        console.log("hello girl");
+            
+            
+        })
+    </script>
+</body>
+</html>

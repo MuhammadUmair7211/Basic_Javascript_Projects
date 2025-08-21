@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: #7ed6df;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            padding: 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: aliceblue;
+        }
+        .container p{
+            margin: 5px;
+            font-weight: 600;
+        }
+        .container input{
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid#30336b;
+            background-color: #eaeaea;
+            color: #535c68;
+            margin-top: 10px;
+            outline: none;
+            margin-bottom: 10px;
+        }
+        #imgBox{
+            margin: 15px;
+            border-radius: 10px;
+            padding: 10px;
+            max-height: 0px;
+            transition: max-height 1s;
+        }
+        #imgBox img{
+            padding: 10px;
+
+        }
+        #imgBox.show-img{
+            max-height: 300px;
+        }
+        .container button{
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #30336b;
+            color: #fff;
+            cursor: pointer;
+        }
+        .error{
+            animation: shake 0.1s linear 10;
+        }
+        @keyframes shake{
+            0%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(-5px);
+            }
+            75%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="head">Enter your Text or URL</p>
+        <input type="text" placeholder="Text or URL" id="input-text">
+        <div id="imgBox">
+            <img src="" id="qrImage">
+        </div>
+        <button onclick="generateCode()">Generate QR Code</button>
+    </div>
+
+    <script>
+        const imgBox = document.getElementById("imgBox")
+        const inputText = document.getElementById("input-text")
+        const qrImage = document.getElementById("qrImage")
+
+        function generateCode(){
+            if(inputText.value.length > 0){
+            imgBox.classList.add("show-img")
+            qrImage.style.border = "1px solid black"
+            qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + inputText.value;
+        }
+        else{
+            inputText.classList.add("error")
+            setTimeout(()=>{
+                inputText.classList.remove("error")
+            },2000)
+        }
+        }
+    </script>
+</body>
+</html>

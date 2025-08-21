@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Password </title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #00ACC1;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content:center
+        }
+        .inputBox{
+            width: 40%;
+            background-color: #fff;
+        }
+        input{
+            width: 90%;
+            background-color: #fff;
+            border: none;
+            outline: none;
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+        img{
+            cursor: pointer;
+            width: 2vw;
+            height: 2vw;
+        }
+     </style>
+</head>
+<body>
+        <div class="inputBox">
+          <input type="password" placeholder="Password" id="password">
+          <img src="hidden.png" id="eyeIcon">
+        </div>
+
+
+    <script>
+        let password = document.getElementById("password");
+        let icon = document.getElementById("eyeIcon")
+        icon.onclick = function(){
+            if(password.type == "password"){
+                password.type = "Text";
+                icon.src = "eye.png" 
+            }else{
+                password.type = "password";
+                icon.src = "hidden.png"    
+            }
+        }
+    </script>
+</body>
+</html>

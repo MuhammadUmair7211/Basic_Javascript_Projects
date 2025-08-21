@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins';
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: #d0eaff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 25vw;
+            background-color: #000;
+            box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+            transform: scale(1);
+        }
+        .container img{
+            width: 100%;
+            padding-top: 2vw;
+        }
+        .product-details{
+            width: 25vw;
+            background-color: #fff;
+            padding: 1.5vw 2.5vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 5px 4px 4px 1px rgba(0, 0, 0, 0.3);
+        }
+        .product-details h1{
+            margin-top: 1vw;
+            color: #555;
+        }
+        .product-details h2{
+            color: #777;
+        }
+        .product-details h3{
+            color: #00da74;
+            margin-bottom: 1.5vw;
+        }
+        .product-details p{
+            font-size: 1vw;
+            margin-bottom: 1vw;
+        }
+        .size{
+            display: flex;
+            align-items: center;
+            gap: 2vw;
+        }
+        .size label, span{
+            color: #777;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-top: 1vw;
+        }
+        .size input:checked +span {
+            color: blue
+        }
+        .size input{
+            display: none;
+        }
+        .color{
+            display: flex;
+            align-items: center;
+            gap: 2vw;
+            margin-top: 1vw;
+        }
+        .color input, p {
+            color: #777;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .color span{
+            background: red;
+        }
+        .quantity{
+            margin-top: 1vw;
+            display: flex;
+            align-items: center;
+            gap: 2vw;
+        }
+        .quantity input{
+            width: 5vw;
+            background: #eee;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            text-align: center;
+            padding: 0.5vw 0vw;
+        }
+        form button{
+            margin-top: 1vw;
+            width: 100%;
+            padding: 0.5vw 1vw;
+            border: none;
+            background-color: blue;
+            color: #fff;
+            border-radius: 30vw;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image1.png">
+    </div>
+    <div class="product-details">
+        <h1>Casual T Shirt</h1>
+        <h2>$15.00</h2>
+        <h3>30% OFF</h3>
+        <p>Wrangler is an American manufacturer of jeans and other clothing items, particularly workwear.</p>
+        <form>
+        <div class="size">
+            <span>Size</span>
+            <label for="small">
+                <input type="radio" name="size" id="small">
+                <span>S</span>
+            </label>
+            <label for="medium">
+                <input type="radio" name="size" id="medium">
+                <span>M</span>
+            </label>
+            <label for="large">
+                <input type="radio" name="size" id="large">
+                <span>L</span>
+            </label>
+            <label for="x-large">
+                <input type="radio" name="size" id="x-large">
+                <span>XL</span>
+            </label>
+            <label for="xx-large">
+                <input type="radio" name="size" id="xx-large">
+                <span>XXL</span>
+            </label>
+        </div>
+        <div class="color">
+            <p>Color</p>
+            <label for="red">
+                <input type="radio" name="color" id="red">
+                <span class="red"></span>
+            </label>
+            <label for="green">
+                <input type="radio" name="color" id="green">
+                <span class="green"></span>
+            </label>
+            <label for="blue">
+                <input type="radio" name="color" id="blue">
+                <span class="blue"></span>
+            </label>
+            <label for="black">
+                <input type="radio" name="color" id="black">
+                <span class="black"></span>
+            </label>
+            <label for="yellow">
+                <input type="radio" name="color" id="yellow">
+                <span class="yellow"></span>
+            </label>
+        </div>
+        <div class="quantity">
+            <p>Quantity</p>
+            <input type="number" value="1">
+        </div>
+        <button>Buy Now</button>
+        </form>
+
+    </div>
+</body>
+</html>

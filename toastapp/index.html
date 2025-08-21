@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Notifications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #ff7979;
+        }
+        .button{
+            margin: 5%;
+        }
+        .button button{
+            margin: 3%;
+            padding: 2%;
+            background-color: #eaeaea;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        #toast-box{
+            margin: 5px;
+            position: absolute;
+            bottom: 1px;
+            display: flex;
+            padding: 10px;
+            right: 5px;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .toast{
+            margin: 10px;
+            display: flex;
+            padding: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            align-items: center;
+            background-color: white;
+        }
+        .toast i{
+            margin-right: 10px;
+            font-size: 30px;
+            color: green;
+        }
+        .error i{
+            color: red;
+        }
+        .invalid i{
+            color: orange;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="button">
+        <button onclick="notification(successmsg)">Success</button>
+        <button onclick="notification(errormsg)">Error</button>
+        <button onclick="notification(invalidmsg)">Invalid</button>
+    </div>
+    <div id="toast-box">
+    </div>
+
+    <script>
+        let successmsg = '<i class="fa-solid fa-circle-check"></i> Submitted Successfully!';
+        let errormsg = '<i class="fa-solid fa-circle-xmark"></i>Please fix the error!';
+        let invalidmsg = '<i class="fa-solid fa-circle-exclamation"></i>Invalid input, Check again';
+        let toastBox = document.getElementById("toast-box")
+        function notification(msg){
+           const toast = document.createElement("div")
+           toast.classList.add("toast")
+           toast.innerHTML = msg
+           toastBox.appendChild(toast)
+
+           if(msg.includes("error")){
+            toast.classList.add("error")
+           }
+           if(msg.includes("Invalid")){
+            toast.classList.add("invalid")
+           }
+
+           setTimeout(()=>{
+            toast.remove()
+        },5000)
+        }
+        
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Menu</title>
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: poppins;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(55deg, #414141, #20205b);
+            display: flex;
+            justify-content: center;
+        }
+        .select-menu{
+            width: 25vw;
+            cursor: pointer;
+        }
+        .select-list{
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 1vw 2vw;
+            background-color: rgba(255, 255, 255, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 5px;
+            margin-top: 10vw;
+        }
+        ul{
+            border-radius: 5px;
+            margin-top: 1vw;
+            width: 100%;
+            border: none;
+            outline: none;
+            padding-top: 1vw;
+            padding-right: 1vw;
+            background-color: rgba(255, 255, 255, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* display: none; */
+        }
+        li{
+            list-style-type: none;
+            margin-bottom: 1vw;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 0.5vw 1vw;
+            margin-left: 1vw;
+            transition: all 0.3s;
+        }
+        .arrow{
+            width: 1.5vw;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        li:hover{
+            background-color: #eaeaea;
+            transform: scale(0.9);
+        }
+        .image{
+            width: 1.5vw;
+            cursor: pointer;
+            margin-right: 1vw;
+        }
+        .hide{
+            display: none;
+        }
+        .rotate{
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="select-menu">
+        <div class="select-list" id="select-field">
+            <p id="selectText">Select Social Media</p>
+            <img class="arrow" id="arrowIcon" src="arrow.png">
+        </div>
+           <ul class="hide" id="list">
+            <li id="options">
+                <img src="facebook.png" class="image">
+                <p>Facebook</p>
+            </li>
+            <li id="options">
+                <img src="youtube.png" class="image">
+                <p>Youtube</p>
+            </li>
+            <li id="options">
+                <img src="instagram.png" class="image">
+                <p>Instagram</p>
+            </li>
+            <li id="options">
+                <img src="twitter.png" class="image">
+                <p>Twitter (X)</p>
+            </li>
+            <li id="options">
+                <img src="pinterest.png" class="image">
+                <p>Pinterest</p>
+            </li>
+            <li id="options">
+                <img src="whatsapp.png" class="image">
+                <p>WhatsApp</p>
+            </li>
+           </ul>
+    </div>
+
+    <script>
+        let options = document.getElementById("options");
+        let select = document.getElementById("selectText");
+        let selectField = document.getElementById("select-field");
+        let unorderedList = document.getElementById("list")
+        let arrowIcon = document.getElementById("arrowIcon");
+        selectField.onclick = function(){
+            unorderedList.classList.toggle("hide");
+            arrowIcon.classList.toggle("rotate")
+        }
+
+        
+        for (option of options) {
+            option.onclick = function(){
+                select.innerHTML = this.textContent;
+                arrowIcon.classList.toggle("rotate")
+            }
+        }
+       
+    </script>
+</body>
+</html>

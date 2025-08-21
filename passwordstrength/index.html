@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #inputBox{
+            width: 25vw;
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5vw;
+            border: 0.1vw solid #ccc;
+        }
+        input{
+            padding: 1vw;
+            border: none;
+            width: 100%;
+            outline: none;
+            background-color: #000;
+            color: #fff;
+        }
+        button{
+            border-radius: 50%;
+            padding: 1vw 1.2vw;
+            border: none;
+            background-color: #fff;
+            outline: none;
+            cursor: pointer;
+        }
+        p{
+            color: #fff;
+            margin-top: 1vw;
+            display:none;
+            font-size: 1.5vw;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="inputBox">
+        <input type="password" placeholder="Enter Password" id="password">
+        <button><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+        <p id="message">Password is <span id="strength"></span></p>
+    </div>
+
+    <script>
+        let password = document.getElementById("password")
+        let inputBox = document.getElementById("inputBox")
+        let message = document.getElementById("message")
+        let strength = document.getElementById("strength")
+
+
+        password.addEventListener("input", ()=>{
+            if (password.value.length > 0) {
+                message.style.display = "block";
+            }
+            else{
+                message.style.display = "none"
+            }
+            if (password.value.length < 4){
+                strength.innerHTML = "weak";
+                inputBox.style.borderColor = "red";
+                message.style.color = "red"
+            }
+            else if(password.value.length >= 4 &&password.value.length < 8){
+                strength.innerHTML = "medium";
+                inputBox.style.borderColor = "yellow";
+                message.style.color = "yellow"
+            }
+            else if (password.value.length >= 8){
+                strength.innerHTML = "strong";
+                message.style.color = "green";
+                inputBox.style.borderColor = "green";
+            } 
+        })
+    </script>
+</body>
+</html>

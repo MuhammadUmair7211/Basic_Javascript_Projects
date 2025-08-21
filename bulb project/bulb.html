@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On | Off</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container button{
+            margin-top: 2vw;
+            padding: 1vw 2vw;
+            cursor: pointer;
+        }
+        body{
+            background-color: #fff;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #bulb{
+            width: 20vw;
+            height: 20vw;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="bulb"></div>
+        <button id="on">ON</button>
+    </div>
+
+    <script>
+
+        let bulb = document.getElementById("bulb");
+        let toggleButton = document.getElementById("on")
+        let flag = 0;
+        toggleButton.addEventListener("click", function(){
+            if(flag == 0){
+            bulb.style.backgroundColor = "orange";
+            toggleButton.innerHTML = "OFF";
+            flag = 1;
+            }else{
+            bulb.style.backgroundColor = "transparent";
+            toggleButton.innerHTML = "ON";
+            flag = 0
+            }
+            
+        }
+        )
+    </script>
+</body>
+</html>

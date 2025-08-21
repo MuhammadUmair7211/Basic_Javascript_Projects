@@ -1,0 +1,72 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.social-media-icons {
+	max-width: 800px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.icon {
+	max-width: 200px;
+	width: 100%;
+	min-height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: 100% 200%;
+	background-position: 0 5%;
+	transition: all 0.5s;
+	box-shadow: 0px 0px 5px 0px;
+}
+.icon i {
+	font-size: 64px;
+}
+.fa-facebook {
+	color: #1877f2;
+}
+.fa-youtube {
+	color: #ff0000;
+}
+.fa-twitter {
+	color: #1da1f2;
+}
+.fa-icon {
+	background-image: linear-gradient(#fff 50%, #1877f2 5px);
+}
+.yu-icon {
+	background-image: linear-gradient(#fff 50%, #ff0000 5px);
+}
+.tw-icon {
+	background-image: linear-gradient(#fff 50%, #1da1f2 5px);
+}
+.fa-icon:hover {
+	background-position: 0 100%;
+	cursor: pointer;
+}
+.fa-icon:hover i {
+	color: white;
+}
+.yu-icon:hover {
+	background-position: 0 100%;
+	cursor: pointer;
+}
+.yu-icon:hover i {
+	color: white;
+}
+.tw-icon:hover {
+	background-position: 0 100%;
+	cursor: pointer;
+}
+.tw-icon:hover i {
+	color: white;
+}

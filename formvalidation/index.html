@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Form Validation</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family:cursive
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color:cornflowerblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            background-color: #eaeaea;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            padding: 0.5vw 2vw;
+            margin-top: 3.5vw;
+        }
+        i{
+            font-size: 3vw;
+            padding: 1.5vw;
+            border-radius: 50vw;
+            background-color: #fff;
+            color: #344085;
+            margin-top: 1vw;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .input-group{
+            display: flex;
+            margin-top: 1vw;
+        }
+        label{
+            width: 50%;
+            font-size: 1rem;
+        }
+        input{
+            width: 100%;
+            padding: 0.5rem;
+            border: none;
+            outline: none;
+        }
+        .input-group span{
+            color: red;
+            font-size: 0.8rem;
+            position: absolute;
+            right: 2.3vw;
+        }
+        textarea{
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            outline: none;
+        }
+        button{
+            display: block;
+            padding: 0.5rem 2rem;
+            border: none;
+            background-color: #344085;
+            color: #dadada;
+            border-radius: 0.5vw;
+            margin-bottom: 1vw;
+            cursor: pointer;
+        }
+        .submit-error{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <i class="fa-solid fa-user-tie"></i>
+        <form class="form">
+        <div class="input-group">
+        <label for="">Full Name:</label>
+        <input type="text" placeholder="Enter your Name">
+        <span class="name-error">full name is required</span>
+        </div>
+        
+        <div class="input-group">
+        <label for="">Email:</label>
+        <input type="email" placeholder="Enter your Email">
+        <span class="email-error">email is invalid</span>
+        </div>
+        
+        <div class="input-group">
+        <label for="">Contact Number:</label>
+        <input type="text" placeholder="03123456789">
+        <span class="number-error">number is invalid</span>
+        </div>
+        
+        <div class="input-group">
+        <label for="">Your Message:</label>
+        <textarea placeholder="Enter your Message" contenteditable="true" cols="32" rows="8"></textarea>
+        <span class="message-error">message is required</span>
+        </div>
+        </form>
+        <div class="btn">
+        <button>Submit</button>
+        <span class="submit-error">*fix the error</span>
+        </div>
+    </div>
+</body>
+</html>

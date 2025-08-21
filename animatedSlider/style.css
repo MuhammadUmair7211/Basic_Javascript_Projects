@@ -1,0 +1,36 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+}
+.container {
+	box-shadow: 0px 0px 8px 0px;
+	padding: 10px 20px;
+	height: 100vh;
+	text-align: center;
+	background-size: 100% 100%;
+	animation: slider 20s linear infinite;
+}
+@keyframes slider {
+	0% {
+		background-image: url(./images/1.jpg);
+	}
+	20% {
+		background-image: url(./images/2.jpg);
+	}
+	40% {
+		background-image: url(./images/3.jpg);
+	}
+	60% {
+		background-image: url(./images/4.jpg);
+	}
+	80% {
+		background-image: url(./images/5.jpg);
+	}
+	100% {
+		background-image: url(./images/6.jpg);
+	}
+}
