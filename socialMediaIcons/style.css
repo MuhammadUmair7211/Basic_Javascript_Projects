@@ -12,15 +12,18 @@ body {
 	max-width: 800px;
 	width: 100%;
 	display: flex;
+	padding: 20px 30px;
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	gap: 20px;
 }
 .icon {
 	max-width: 200px;
 	width: 100%;
 	min-height: 200px;
 	display: flex;
+	margin: 0 auto;
 	align-items: center;
 	justify-content: center;
 	background-size: 100% 200%;
