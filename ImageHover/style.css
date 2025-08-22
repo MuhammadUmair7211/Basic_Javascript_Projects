@@ -1,0 +1,72 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Nunito;
+}
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.row {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+.col {
+	flex-basis: 30%;
+	position: relative;
+}
+.col img {
+	width: 100%;
+	filter: grayscale(100%);
+	transition: all 0.5s ease;
+}
+.info {
+	width: 90%;
+	background-color: black;
+	padding: 15px 0;
+	text-align: center;
+	border-radius: 3px;
+	color: white;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -50px;
+}
+.info p {
+	font-size: 12px;
+	margin: 6px 0px;
+}
+.icons {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 1s;
+}
+.icons .fa-brands {
+	font-size: 20px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+.fa-facebook {
+	color: #1877f2;
+}
+.fa-youtube {
+	color: #ff0000;
+}
+.fa-twitter {
+	color: #1da1f2;
+}
+.fa-instagram {
+	color: #e95950;
+}
+.col:hover .icons {
+	max-height: 100px;
+}
+.col:hover img {
+	filter: grayscale(0);
+}
