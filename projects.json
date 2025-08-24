@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Store",
+      "description": "A full-stack e-commerce website with product listings, shopping cart, user authentication, and payment integration.",
+      "technologies": ["React", "TailwindCSS", "Node.js", "Express", "MongoDB"],
+      "github": "https://github.com/umair/EcommerceStore",
+      "demo": "https://ecommerce-demo.vercel.app",
+      "image": "images/ecommerce.png"
+    },
+    {
+      "id": 2,
+      "title": "Portfolio Website",
+      "description": "A responsive personal portfolio showcasing my skills, projects, and contact details with a dark theme.",
+      "technologies": ["React", "TailwindCSS"],
+      "github": "https://github.com/umair/Portfolio",
+      "demo": "https://umair-portfolio.vercel.app",
+      "image": "images/portfolio.png"
+    },
+    {
+      "id": 3,
+      "title": "Crypto Trading Platform",
+      "description": "A trading simulation app with real-time price tracking, trade expiry countdown, and profit/loss calculations.",
+      "technologies": ["Django", "TailwindCSS", "Binance API"],
+      "github": "https://github.com/umair/CryptoTradingApp",
+      "demo": "https://crypto-demo.vercel.app",
+      "image": "images/crypto.png"
+    },
+    {
+      "id": 4,
+      "title": "React Projects Collection",
+      "description": "A collection of multiple small React apps including a Todo app, Weather app, and Calculator.",
+      "technologies": ["React", "Bootstrap"],
+      "github": "https://github.com/umair/MyReactProjects",
+      "demo": "",
+      "image": "images/react-projects.png"
+    }
+  ]
+}
