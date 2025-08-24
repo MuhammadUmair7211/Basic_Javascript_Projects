@@ -1,184 +1,144 @@
 {
   "projects": [
     {
-      "id": 1,
+      "no": 1,
       "name": "E-Commerce Platform",
-      "description": "A MERN-stack online store with authentication, cart, and Stripe payments.",
-      "tech_stack": ["React", "Node.js", "Express", "MongoDB"],
-      "github": "https://github.com/MuhammadUmair7211/ecommerce-platform",
-      "demo_link": "https://ecommerce-demo.vercel.app",
-      "image": "images/ecommerce.png"
+      "description": "A full-stack MERN e-commerce platform featuring product management, shopping cart, order processing, and Stripe payment gateway integration.",
+      "tech_stack": ["React", "Node.js", "Express", "MongoDB", "Stripe"],
+      "repo_link": "https://github.com/MuhammadUmair7211/ecommerce-platform"
     },
     {
-      "id": 2,
+      "no": 2,
       "name": "Portfolio Website",
-      "description": "Responsive personal portfolio showcasing skills, projects, and contact form.",
+      "description": "A responsive and modern personal portfolio website showcasing projects, skills, and achievements, built with React and TailwindCSS.",
       "tech_stack": ["React", "TailwindCSS"],
-      "github": "https://github.com/MuhammadUmair7211/portfolio",
-      "demo_link": "https://umair-portfolio.vercel.app",
-      "image": "images/portfolio.png"
+      "repo_link": "https://github.com/MuhammadUmair7211/portfolio"
     },
     {
-      "id": 3,
+      "no": 3,
       "name": "Crypto Trading Simulator",
-      "description": "A trading platform with real-time price tracking using Binance API.",
+      "description": "A real-time crypto trading simulation app with countdown timers, profit/loss logic, and balance updates using Binance API.",
       "tech_stack": ["Django", "TailwindCSS", "Binance API"],
-      "github": "https://github.com/MuhammadUmair7211/crypto-trading",
-      "demo_link": "",
-      "image": "images/crypto.png"
+      "repo_link": "https://github.com/MuhammadUmair7211/crypto-trading-simulator"
     },
     {
-      "id": 4,
-      "name": "Weather App",
-      "description": "Weather forecast app with geolocation and OpenWeather API integration.",
-      "tech_stack": ["JavaScript", "OpenWeather API", "CSS"],
-      "github": "https://github.com/MuhammadUmair7211/weatherapp",
-      "demo_link": "",
-      "image": "images/weather.png"
-    },
-    {
-      "id": 5,
-      "name": "Task Manager",
-      "description": "A full-stack productivity app to manage todos, reminders, and deadlines.",
-      "tech_stack": ["React", "Node.js", "MongoDB"],
-      "github": "https://github.com/MuhammadUmair7211/task-manager",
-      "demo_link": "",
-      "image": "images/todo.png"
-    },
-    {
-      "id": 6,
-      "name": "Budget Tracker",
-      "description": "A budgeting app that tracks expenses, income, and generates reports.",
-      "tech_stack": ["JavaScript", "HTML", "CSS"],
-      "github": "https://github.com/MuhammadUmair7211/budget-tracker",
-      "demo_link": "",
-      "image": "images/budget.png"
-    },
-    {
-      "id": 7,
-      "name": "Quiz App",
-      "description": "Interactive quiz application with categories and score tracking.",
-      "tech_stack": ["React", "Bootstrap"],
-      "github": "https://github.com/MuhammadUmair7211/quiz-app",
-      "demo_link": "",
-      "image": "images/quiz.png"
-    },
-    {
-      "id": 8,
-      "name": "Chat Application",
-      "description": "A real-time chat app using WebSockets with rooms and private messaging.",
-      "tech_stack": ["Node.js", "Socket.io", "Express"],
-      "github": "https://github.com/MuhammadUmair7211/chat-app",
-      "demo_link": "",
-      "image": "images/chat.png"
-    },
-    {
-      "id": 9,
-      "name": "Movie Finder",
-      "description": "Search movies and get details using OMDb API with a responsive UI.",
-      "tech_stack": ["React", "OMDb API", "CSS"],
-      "github": "https://github.com/MuhammadUmair7211/movie-finder",
-      "demo_link": "",
-      "image": "images/movies.png"
-    },
-    {
-      "id": 10,
+      "no": 4,
       "name": "Blog Platform",
-      "description": "A blogging system with user authentication, CRUD posts, and comments.",
-      "tech_stack": ["Node.js", "Express", "MongoDB"],
-      "github": "https://github.com/MuhammadUmair7211/blog-platform",
-      "demo_link": "",
-      "image": "images/blog.png"
+      "description": "A dynamic blogging platform with user authentication, post creation, comments, and rich text editor support.",
+      "tech_stack": ["React", "Node.js", "Express", "MongoDB"],
+      "repo_link": "https://github.com/MuhammadUmair7211/blog-platform"
     },
     {
-      "id": 11,
-      "name": "Music Player",
-      "description": "Web-based music player with playlists and custom controls.",
-      "tech_stack": ["JavaScript", "HTML5 Audio", "CSS"],
-      "github": "https://github.com/MuhammadUmair7211/music-player",
-      "demo_link": "",
-      "image": "images/music.png"
+      "no": 5,
+      "name": "Task Manager",
+      "description": "A MERN-based task management app allowing users to create, update, and delete tasks with authentication.",
+      "tech_stack": ["React", "Node.js", "Express", "MongoDB"],
+      "repo_link": "https://github.com/MuhammadUmair7211/task-manager"
     },
     {
-      "id": 12,
-      "name": "Image Gallery",
-      "description": "Responsive gallery app with image filters and lightbox preview.",
-      "tech_stack": ["React", "TailwindCSS"],
-      "github": "https://github.com/MuhammadUmair7211/image-gallery",
-      "demo_link": "",
-      "image": "images/gallery.png"
+      "no": 6,
+      "name": "Weather App",
+      "description": "A weather forecast app that fetches live weather data from OpenWeather API and displays real-time conditions.",
+      "tech_stack": ["React", "OpenWeather API"],
+      "repo_link": "https://github.com/MuhammadUmair7211/weather-app"
     },
     {
-      "id": 13,
+      "no": 7,
+      "name": "Chat Application",
+      "description": "A real-time chat application with WebSocket support, private rooms, and message history.",
+      "tech_stack": ["React", "Node.js", "Socket.IO"],
+      "repo_link": "https://github.com/MuhammadUmair7211/chat-app"
+    },
+    {
+      "no": 8,
+      "name": "Online Quiz System",
+      "description": "An interactive quiz application with timer, score calculation, and multiple-choice questions.",
+      "tech_stack": ["React", "Node.js", "MongoDB"],
+      "repo_link": "https://github.com/MuhammadUmair7211/quiz-app"
+    },
+    {
+      "no": 9,
       "name": "Notes App",
-      "description": "Simple notes app with local storage support and CRUD operations.",
+      "description": "A simple CRUD-based notes app with persistent storage and search functionality.",
+      "tech_stack": ["React", "LocalStorage"],
+      "repo_link": "https://github.com/MuhammadUmair7211/notes-app"
+    },
+    {
+      "no": 10,
+      "name": "Calculator",
+      "description": "A fully functional calculator app with advanced arithmetic and percentage operations.",
+      "tech_stack": ["JavaScript", "HTML", "CSS"],
+      "repo_link": "https://github.com/MuhammadUmair7211/calculator"
+    },
+    {
+      "no": 11,
+      "name": "To-Do List",
+      "description": "A to-do list app with task categorization, local storage, and responsive design.",
+      "tech_stack": ["JavaScript", "HTML", "CSS"],
+      "repo_link": "https://github.com/MuhammadUmair7211/todo-list"
+    },
+    {
+      "no": 12,
+      "name": "Memory Game",
+      "description": "A fun card-matching memory game with dynamic scoring and reset options.",
+      "tech_stack": ["JavaScript", "HTML", "CSS"],
+      "repo_link": "https://github.com/MuhammadUmair7211/memory-game"
+    },
+    {
+      "no": 13,
+      "name": "Typing Speed Test",
+      "description": "A typing test app that calculates typing speed (WPM) and accuracy in real-time.",
+      "tech_stack": ["JavaScript", "HTML", "CSS"],
+      "repo_link": "https://github.com/MuhammadUmair7211/typing-test"
+    },
+    {
+      "no": 14,
+      "name": "Expense Tracker",
+      "description": "A financial tracker app that allows users to manage income, expenses, and calculate balance dynamically.",
+      "tech_stack": ["React", "Context API"],
+      "repo_link": "https://github.com/MuhammadUmair7211/expense-tracker"
+    },
+    {
+      "no": 15,
+      "name": "Movie Search App",
+      "description": "A movie search app using OMDb API to fetch and display movies with details like ratings and actors.",
+      "tech_stack": ["React", "OMDb API"],
+      "repo_link": "https://github.com/MuhammadUmair7211/movie-search"
+    },
+    {
+      "no": 16,
+      "name": "Digital Clock",
+      "description": "A live digital clock app displaying real-time hours, minutes, and seconds.",
+      "tech_stack": ["JavaScript", "HTML", "CSS"],
+      "repo_link": "https://github.com/MuhammadUmair7211/digital-clock"
+    },
+    {
+      "no": 17,
+      "name": "Form Validation App",
+      "description": "A dynamic form with custom validation, error messages, and responsive design.",
+      "tech_stack": ["JavaScript", "HTML", "CSS"],
+      "repo_link": "https://github.com/MuhammadUmair7211/form-validation"
+    },
+    {
+      "no": 18,
+      "name": "Image Gallery",
+      "description": "A responsive image gallery with hover effects, modal preview, and animations.",
       "tech_stack": ["JavaScript", "CSS", "HTML"],
-      "github": "https://github.com/MuhammadUmair7211/notes-app",
-      "demo_link": "",
-      "image": "images/notes.png"
+      "repo_link": "https://github.com/MuhammadUmair7211/image-gallery"
     },
     {
-      "id": 14,
-      "name": "URL Shortener",
-      "description": "Full-stack app to shorten URLs with analytics dashboard.",
-      "tech_stack": ["Node.js", "Express", "MongoDB"],
-      "github": "https://github.com/MuhammadUmair7211/url-shortener",
-      "demo_link": "",
-      "image": "images/url.png"
+      "no": 19,
+      "name": "Weather Dashboard",
+      "description": "A React-based weather dashboard with 5-day forecasts, temperature charts, and city search.",
+      "tech_stack": ["React", "Chart.js", "Weather API"],
+      "repo_link": "https://github.com/MuhammadUmair7211/weather-dashboard"
     },
     {
-      "id": 15,
-      "name": "Recipe App",
-      "description": "Browse and search recipes with ingredients and cooking steps.",
-      "tech_stack": ["React", "Edamam API"],
-      "github": "https://github.com/MuhammadUmair7211/recipe-app",
-      "demo_link": "",
-      "image": "images/recipe.png"
-    },
-    {
-      "id": 16,
-      "name": "AI Chatbot",
-      "description": "Conversational chatbot trained on custom data using NLP techniques.",
-      "tech_stack": ["Python", "Flask", "TensorFlow"],
-      "github": "https://github.com/MuhammadUmair7211/ai-chatbot",
-      "demo_link": "",
-      "image": "images/chatbot.png"
-    },
-    {
-      "id": 17,
-      "name": "Fitness Tracker",
-      "description": "Tracks workouts, calories, and integrates with fitness APIs.",
-      "tech_stack": ["React Native", "Firebase"],
-      "github": "https://github.com/MuhammadUmair7211/fitness-tracker",
-      "demo_link": "",
-      "image": "images/fitness.png"
-    },
-    {
-      "id": 18,
-      "name": "Online Code Editor",
-      "description": "Web-based IDE supporting HTML, CSS, and JavaScript execution.",
-      "tech_stack": ["React", "Monaco Editor", "TailwindCSS"],
-      "github": "https://github.com/MuhammadUmair7211/code-editor",
-      "demo_link": "",
-      "image": "images/editor.png"
-    },
-    {
-      "id": 19,
-      "name": "Travel Booking",
-      "description": "Travel booking app with flight, hotel, and destination search.",
-      "tech_stack": ["React", "Node.js", "Express"],
-      "github": "https://github.com/MuhammadUmair7211/travel-booking",
-      "demo_link": "",
-      "image": "images/travel.png"
-    },
-    {
-      "id": 20,
-      "name": "Stock Market Dashboard",
-      "description": "Stock analysis dashboard with real-time price updates.",
-      "tech_stack": ["React", "Chart.js", "Financial API"],
-      "github": "https://github.com/MuhammadUmair7211/stock-dashboard",
-      "demo_link": "",
-      "image": "images/stocks.png"
+      "no": 20,
+      "name": "Interactive Card Flip",
+      "description": "A CSS and JavaScript-based 3D flip card effect for product and portfolio showcases.",
+      "tech_stack": ["JavaScript", "CSS", "HTML"],
+      "repo_link": "https://github.com/MuhammadUmair7211/flip-card"
     }
   ]
 }
