@@ -5,36 +5,37 @@
       "name": "E-Commerce Platform",
       "description": "A full-stack MERN e-commerce platform featuring product management, shopping cart, order processing, and Stripe payment gateway integration.",
       "tech_stack": ["React", "Node.js", "Express", "MongoDB", "Stripe"],
-      "repo_link": "https://github.com/MuhammadUmair7211/ecommerce-platform"
+      "repo_link": "https://github.com/MuhammadUmair7211/Mern-Stack/tree/main/e-commerce"
     },
     {
       "no": 2,
-      "name": "Portfolio Website",
-      "description": "A responsive and modern personal portfolio website showcasing projects, skills, and achievements, built with React and TailwindCSS.",
-      "tech_stack": ["React", "TailwindCSS"],
-      "repo_link": "https://github.com/MuhammadUmair7211/portfolio"
+      "name": "Todo With Context",
+      "description": "A task management application built with React, utilizing Context API for efficient state management. Users can add, update, and delete tasks with a clean and responsive UI.",
+      "tech_stack": ["React", "TailwindCSS", "Context Api"],
+      "repo_link": "https://github.com/MuhammadUmair7211/MyReactProjects/tree/main/09_todo_with_context/todo_with_context"
     },
     {
       "no": 3,
       "name": "Crypto Trading Simulator",
       "description": "A real-time crypto trading simulation app with countdown timers, profit/loss logic, and balance updates using Binance API.",
-      "tech_stack": ["Django", "TailwindCSS", "Binance API"],
-      "repo_link": "https://github.com/MuhammadUmair7211/crypto-trading-simulator"
+      "tech_stack": ["React", "Node", "Express", "TailwindCSS", "Binance API"],
+      "repo_link": "https://github.com/MuhammadUmair7211/PowerDigital"
     },
-    {
-      "no": 4,
-      "name": "Blog Platform",
-      "description": "A dynamic blogging platform with user authentication, post creation, comments, and rich text editor support.",
-      "tech_stack": ["React", "Node.js", "Express", "MongoDB"],
-      "repo_link": "https://github.com/MuhammadUmair7211/blog-platform"
-    },
-    {
-      "no": 5,
-      "name": "Task Manager",
-      "description": "A MERN-based task management app allowing users to create, update, and delete tasks with authentication.",
-      "tech_stack": ["React", "Node.js", "Express", "MongoDB"],
-      "repo_link": "https://github.com/MuhammadUmair7211/task-manager"
-    },
+   {
+  "no": 4,
+  "name": "Countries App",
+  "description": "A React application that displays detailed information about countries, including population, region, and flag, with search and filter functionality for better user experience.",
+  "tech_stack": ["React", "REST API", "TailwindCSS"],
+  "repo_link": "https://github.com/MuhammadUmair7211/MyReactProjects/tree/main/countriesapp"
+},
+{
+  "no": 5,
+  "name": "Hotel Booking",
+  "description": "A MERN-stack hotel booking platform that allows users to search hotels, view details, and make reservations with authentication and secure booking flow.",
+  "tech_stack": ["React", "Node.js", "Express", "MongoDB"],
+  "repo_link": "https://github.com/MuhammadUmair7211/Mern-Stack/tree/main/HotelBookings/client"
+},
+
     {
       "no": 6,
       "name": "Weather App",
