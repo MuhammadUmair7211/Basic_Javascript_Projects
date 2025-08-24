@@ -21,125 +21,124 @@
       "tech_stack": ["React", "Node", "Express", "TailwindCSS", "Binance API"],
       "repo_link": "https://github.com/MuhammadUmair7211/PowerDigital"
     },
-   {
-  "no": 4,
-  "name": "Countries App",
-  "description": "A React application that displays detailed information about countries, including population, region, and flag, with search and filter functionality for better user experience.",
-  "tech_stack": ["React", "REST API", "TailwindCSS"],
-  "repo_link": "https://github.com/MuhammadUmair7211/MyReactProjects/tree/main/countriesapp"
-},
-{
-  "no": 5,
-  "name": "Hotel Booking",
-  "description": "A MERN-stack hotel booking platform that allows users to search hotels, view details, and make reservations with authentication and secure booking flow.",
-  "tech_stack": ["React", "Node.js", "Express", "MongoDB"],
-  "repo_link": "https://github.com/MuhammadUmair7211/Mern-Stack/tree/main/HotelBookings/client"
-},
-
+    {
+      "no": 4,
+      "name": "Countries App",
+      "description": "A React application that displays detailed information about countries, including population, region, and flag, with search and filter functionality for better user experience.",
+      "tech_stack": ["React", "REST API", "TailwindCSS"],
+      "repo_link": "https://github.com/MuhammadUmair7211/MyReactProjects/tree/main/countriesapp"
+    },
+    {
+      "no": 5,
+      "name": "Hotel Booking",
+      "description": "A MERN-stack hotel booking platform that allows users to search hotels, view details, and make reservations with authentication and secure booking flow.",
+      "tech_stack": ["React", "Node.js", "Express", "MongoDB"],
+      "repo_link": "https://github.com/MuhammadUmair7211/Mern-Stack/tree/main/HotelBookings/client"
+    },
     {
       "no": 6,
       "name": "Weather App",
       "description": "A weather forecast app that fetches live weather data from OpenWeather API and displays real-time conditions.",
       "tech_stack": ["React", "OpenWeather API"],
-      "repo_link": "https://github.com/MuhammadUmair7211/weather-app"
+      "repo_link": "https://github.com/MuhammadUmair7211/Basic_Javascript_Projects/tree/main/Weatherapp"
     },
     {
       "no": 7,
-      "name": "Chat Application",
-      "description": "A real-time chat application with WebSocket support, private rooms, and message history.",
-      "tech_stack": ["React", "Node.js", "Socket.IO"],
-      "repo_link": "https://github.com/MuhammadUmair7211/chat-app"
+      "name": "Background Auto Changer",
+      "description": "A simple project that automatically changes the background color dynamically at intervals, creating engaging visual effects.",
+      "tech_stack": ["JavaScript", "HTML", "CSS"],
+      "repo_link": "https://github.com/MuhammadUmair7211/Basic_Javascript_Projects/tree/main/autoBgColor"
     },
     {
       "no": 8,
-      "name": "Online Quiz System",
-      "description": "An interactive quiz application with timer, score calculation, and multiple-choice questions.",
-      "tech_stack": ["React", "Node.js", "MongoDB"],
-      "repo_link": "https://github.com/MuhammadUmair7211/quiz-app"
+      "name": "Auto Text Animation",
+      "description": "A text animation project that displays auto typing and deleting effects, often used for banners and headers.",
+      "tech_stack": ["JavaScript", "HTML", "CSS"],
+      "repo_link": "https://github.com/MuhammadUmair7211/Basic_Javascript_Projects/tree/main/autotextanimation"
     },
     {
       "no": 9,
       "name": "Notes App",
       "description": "A simple CRUD-based notes app with persistent storage and search functionality.",
-      "tech_stack": ["React", "LocalStorage"],
-      "repo_link": "https://github.com/MuhammadUmair7211/notes-app"
+      "tech_stack": ["React", "Node js", "Express"],
+      "repo_link": "https://github.com/MuhammadUmair7211/Mern-Stack/tree/main/todo"
     },
     {
       "no": 10,
       "name": "Calculator",
       "description": "A fully functional calculator app with advanced arithmetic and percentage operations.",
       "tech_stack": ["JavaScript", "HTML", "CSS"],
-      "repo_link": "https://github.com/MuhammadUmair7211/calculator"
+      "repo_link": "https://github.com/MuhammadUmair7211/Basic_Javascript_Projects/tree/main/calculator2"
     },
     {
       "no": 11,
       "name": "To-Do List",
       "description": "A to-do list app with task categorization, local storage, and responsive design.",
       "tech_stack": ["JavaScript", "HTML", "CSS"],
-      "repo_link": "https://github.com/MuhammadUmair7211/todo-list"
+      "repo_link": "https://github.com/MuhammadUmair7211/Basic_Javascript_Projects/tree/main/to-do-list"
     },
     {
       "no": 12,
-      "name": "Memory Game",
-      "description": "A fun card-matching memory game with dynamic scoring and reset options.",
-      "tech_stack": ["JavaScript", "HTML", "CSS"],
-      "repo_link": "https://github.com/MuhammadUmair7211/memory-game"
+      "name": "Mini WikiPedia",
+      "description": "A mini Wikipedia search app that fetches real-time data using the Wikipedia API and displays article summaries dynamically.",
+      "tech_stack": ["JavaScript", "HTML", "Tailwindcss", "Wikipedia Api"],
+      "repo_link": "https://github.com/MuhammadUmair7211/Basic_Javascript_Projects/tree/main/wikiPedia"
     },
     {
       "no": 13,
-      "name": "Typing Speed Test",
-      "description": "A typing test app that calculates typing speed (WPM) and accuracy in real-time.",
+      "name": "Auto Word Length",
+      "description": "A text utility tool that calculates the word and character length dynamically as the user types.",
       "tech_stack": ["JavaScript", "HTML", "CSS"],
-      "repo_link": "https://github.com/MuhammadUmair7211/typing-test"
+      "repo_link": "https://github.com/MuhammadUmair7211/Basic_Javascript_Projects/tree/main/wordLengthCalc"
     },
     {
       "no": 14,
-      "name": "Expense Tracker",
-      "description": "A financial tracker app that allows users to manage income, expenses, and calculate balance dynamically.",
-      "tech_stack": ["React", "Context API"],
-      "repo_link": "https://github.com/MuhammadUmair7211/expense-tracker"
+      "name": "Random Quote Generator",
+      "description": "An app that fetches and displays random inspirational quotes dynamically from an API at the click of a button.",
+      "tech_stack": ["React", "Random Quote Api"],
+      "repo_link": "https://github.com/MuhammadUmair7211/Basic_Javascript_Projects/tree/main/randomQuoteGenerator"
     },
     {
       "no": 15,
-      "name": "Movie Search App",
-      "description": "A movie search app using OMDb API to fetch and display movies with details like ratings and actors.",
-      "tech_stack": ["React", "OMDb API"],
-      "repo_link": "https://github.com/MuhammadUmair7211/movie-search"
+      "name": "Animated Social Media Icons",
+      "description": "A CSS-based project featuring animated hover effects on social media icons to enhance UI interactivity.",
+      "tech_stack": ["HTML", "CSS"],
+      "repo_link": "https://github.com/MuhammadUmair7211/Basic_Javascript_Projects/tree/main/socialMediaHover"
     },
     {
       "no": 16,
       "name": "Digital Clock",
       "description": "A live digital clock app displaying real-time hours, minutes, and seconds.",
-      "tech_stack": ["JavaScript", "HTML", "CSS"],
-      "repo_link": "https://github.com/MuhammadUmair7211/digital-clock"
+      "tech_stack": ["React", "Tailwindcss"],
+      "repo_link": "https://github.com/MuhammadUmair7211/MyReactProjects/tree/main/digital_clock/clock"
     },
     {
       "no": 17,
-      "name": "Form Validation App",
-      "description": "A dynamic form with custom validation, error messages, and responsive design.",
-      "tech_stack": ["JavaScript", "HTML", "CSS"],
-      "repo_link": "https://github.com/MuhammadUmair7211/form-validation"
+      "name": "React Tic Tac Toe",
+      "description": "A classic tic-tac-toe game built with React, featuring dynamic state management and win/draw detection.",
+      "tech_stack": ["React", "Tailwindcss"],
+      "repo_link": "https://github.com/MuhammadUmair7211/MyReactProjects/tree/main/ticTacToe/ticTacToe"
     },
     {
       "no": 18,
-      "name": "Image Gallery",
+      "name": "Css Image Hover",
       "description": "A responsive image gallery with hover effects, modal preview, and animations.",
       "tech_stack": ["JavaScript", "CSS", "HTML"],
-      "repo_link": "https://github.com/MuhammadUmair7211/image-gallery"
+      "repo_link": "http://github.com/MuhammadUmair7211/Basic_Javascript_Projects/tree/main/ImageHover"
     },
     {
       "no": 19,
-      "name": "Weather Dashboard",
-      "description": "A React-based weather dashboard with 5-day forecasts, temperature charts, and city search.",
-      "tech_stack": ["React", "Chart.js", "Weather API"],
-      "repo_link": "https://github.com/MuhammadUmair7211/weather-dashboard"
+      "name": "Currency Converter",
+      "description": "A currency converter app that fetches real-time exchange rates from an API and calculates conversions instantly.",
+      "tech_stack": ["JavaScript", "REST API", "HTML", "CSS"],
+      "repo_link": "https://github.com/MuhammadUmair7211/Basic_Javascript_Projects/tree/main/currencyConverter"
     },
     {
       "no": 20,
       "name": "Interactive Card Flip",
       "description": "A CSS and JavaScript-based 3D flip card effect for product and portfolio showcases.",
       "tech_stack": ["JavaScript", "CSS", "HTML"],
-      "repo_link": "https://github.com/MuhammadUmair7211/flip-card"
+      "repo_link": "https://github.com/MuhammadUmair7211/Basic_Javascript_Projects/tree/main/flipCard"
     }
   ]
 }
